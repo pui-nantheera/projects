@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="..\stylesheet.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+        <title>VolcanicUnrest</title>
+        <meta name="description" content="B-Line Quantification in Lung Ultrasound Images">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="header">
+            <p id="name">Nantheera Anantrasirichai</p>
+        </div>
+        <div class="left">
+            <nav class="textmenu">
+                <ul>
+                  <li><a href="..\index.html">Home</a></li>
+                  <li><a href="..\about.html">About Pui</a></li>
+                  <li><a href="..\research.html">Research</a></li>
+                  <li><a href="..\publications.html">Publications</a></li>
+                  <li><a href="..\download.html">Download</a></li>
+                  <li><a href="..\links.html">Links</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="body">
+            <h2>Automated Alert System for Volcanic Unrest</h2>
+                <div class="researchlist">
+                    <p>Globally 800 million people live within 100 km of a volcano and currently 1500 volcanoes are considered active, but half of these have no ground-based monitoring. Recent improvements in the frequency, type and availability of satellite images mean it is now feasible to routinely monitor volcanoes in both urban and remote areas. In particular, Interferometric Synthetic Aperture Radar (InSAR) data can detect surface deformation, which has a strong statistical link to eruption [<a href="https://volcanodeformation.blogs.ilrt.org/about/" target="_blank">Link</a>]. However, the datasets produced by modern satellites are too large to be manually analysed on a global basis. In project, we systematically process >30,000 interferograms acquired by Sentinel-1 covering over 900 volcanoes in 2016-2017. Then we apply machine learning algorithms to automatically detect volcanic ground deformation. The proposed method works on ‘<a href="https://volcanodeformation.blogs.ilrt.org/measuring-deformation/" target="_blank">wrapped</a>’ interferograms with no atmospheric corrections. The ground deformations display as fringes representing a set amount of displacement. These fringes provide strong low-level visual features for image classification. </p>
+
+                    <p>Here, we extract the spatial characteristics of the interferograms using deep convolutional neural networks (CNN) and initially train the model with Envisat data. The algorithm provides a probability that a given interferogram contains surface deformation. The positive results (probability >0.5) are checked by an expert and fed back for model updating. Following training with a combination of both positive and negative examples of Sentinel-1 data, this method reduced the number of interferograms to approximately 100 which required further inspection, of which at least 39 are considered ‘true positives’. We demonstrate that machine learning can efficiently detect large, rapid deformation signals in wrapped interferograms. This study is the first to use machine learning approaches for detecting volcanic deformation in large datasets and demonstrates the potential of such techniques for developing volcanic unrest alert systems based on satellite imagery.</p>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li><span class="papername">Application of Machine Learning to Classification of Volcanic Deformation in Routinely-Generated InSAR data</span>. N. Anantrasirichai, F. Albino, P. Hill, D. Bull, J. Biggs. Journal of Geophysical Research: Solid Earth, 2018. <pdf>[</pdf><a href="papers\volcanodeform.pdf" target="_blank">PDF</a><pdf>]</pdf><pdf>[</pdf><a href="https://doi.org/10.1029/2018JB015911" target="_blank">BibTeX</a><pdf>]</pdf><pdf>[</pdf><a href="..\download.html#LungUSimages">Training dataset</a><pdf>]</pdf></li>
+                        <li><span class="papername">Detecting Volcano Deformation in InSAR using Deep learning</span>. N. Anantrasirichai, F. Albino, P. Hill, D. Bull, J. Biggs. present in Janet Watson Meeting 2018: A Data Explosion - The Geological Society. <pdf>[</pdf><a href="https://arxiv.org/abs/1803.00380" target="_blank">PDF</a><pdf>]</pdf> </li>
+                    </ul>
+                </div>
+        </div>
+        <div id="footer">
+            <p>Office: room 2.34 Merchant Venturer's Building, Bristol, UK, BS8 1UB | Tel: +44 (0) 117-331-5075</p>
+        </div>
+    </body>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-41219445-1', 'bris.ac.uk');
+        ga('send', 'pageview');
+    </script>
+</html>

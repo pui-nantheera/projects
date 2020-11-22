@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="..\stylesheet.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+        <title>Pui's OCT research</title>
+        <meta name="description" content="Optical Coherence Tomography OCT image enhancement"> 
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="header">
+            <p id="name">Nantheera Anantrasirichai</p>
+        </div>
+        <div class="left">
+            <nav class="textmenu">
+                <ul>
+                  <li><a href="..\index.html">Home</a></li>
+                  <li><a href="..\about.html">About Pui</a></li>
+                  <li><a href="..\research.html">Research</a></li>
+                  <li><a href="..\publications.html">Publications</a></li>
+                  <li><a href="..\download.html">Download</a></li>
+                  <li><a href="..\links.html">Links</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="body">
+            <h2>Computer Assisted Analysis of Ocular Imaging</h2>
+            <div class="researchlist">
+                <h4>Texture-preserving image enhancement for Optical Coherence Tomography</h4>
+                    <p>The project developed novel image enhancement algorithms for retinal optical coherence tomography (OCT). These images contain a large amount of speckle causing them to be grainy and of very low contrast. To make these images valuable for clinical interpretation, our method offers speckle removal, while preserving useful information contained in each retinal layer starts with multi-scale despeckling based on a dual-tree complex wavelet transform (DT-CWT). The OCT image is further enhanced through a smoothing process that uses a novel adaptive-weighted bilateral filter (AWBF). This offers the desirable property of preserving texture within the OCT image layers. The enhanced OCT image is then segmented to extract inner retinal layers that contain useful information for eye research. Our layer segmentation technique is also performed in DT-CWT domain. Finally we also developed an OCT/fundus image registration algorithm which is helpful when two modalities are used together for diagnosis and for information fusion.</p>
+                    <p>Figure below shows B-scans of retinal OCT images at ONH (top) and macula (bottom). Left: raw OCT images show grainy texture. Middle: despeckled images using with Cauchy Model<sup>*</sup>. Right: enhanced images using <a href="https://github.com/pui-nantheera/adaptive-bilateral-filter" target="_blank">AWBF</a>.</p>
+                    <p><img class="figuremiddle" src="OCTimaging/compareEnhOCT.png" alt="compare enhanced OCT image" height="320"></p>
+
+                    <p><a href="..\papers\retinal_img_enhance.pdf">Adaptive-Weighted Bilateral Filtering and Other Pre-processing Techniques for Optical Coherence Tomography</a>. N. Anantrasirichai, L. Nicholson, J. E. Morgan, I. Erchova, K. Mortlock, R. V. North, J. Albon, and Alin Achim. Computerized Medical Imaging and Graphics. <pdf>[</pdf><a href="..\papers\retinal_img_enhance.pdf">PDF</a><pdf>]</pdf>  <pdf>[</pdf><a href="http://www.sciencedirect.com/science/article/pii/S0895611114001050" target="_blank">BibTeX</a><pdf>]</pdf> <pdf>[</pdf><a href="https://github.com/pui-nantheera/adaptive-bilateral-filter" target="_blank">AWBF Code</a><pdf>]</pdf></p>
+
+                    <p><a href="..\papers\OCTicip.pdf">Adaptive-weighted bilateral filtering for Optical Coherence Tomography</a>. N. Anantrasirichai, L. Nicholson, J. E. Morgan, I. Erchova, and Alin Achim. In Proceedings of the IEEE International Conference on Image Processing (ICIP 2013). <pdf>[</pdf><a href="..\papers\OCTicip.pdf">PDF</a><pdf>]</pdf> <pdf>[</pdf><a href="">BibTeX</a><pdf>]</pdf></p>
+
+                    <p><a href="..\papers\retinalICIP2013.pdf">Curvelet domain image fusion of OCT and fundus imagery using convolution of meridian distributions</a>. O. Pappas, N. Anantrasirichai, L. Nicholson, J. E. Morgan, I. Erchova, and Alin Achim. In Proceedings of the IEEE International Conference on Image Processing (ICIP 2013). <pdf>[</pdf><a href="..\papers\retinalICIP2013.pdf">PDF</a><pdf>]</pdf></p>
+                    
+                    <p><sup>*</sup>A. Achim and E. Kuruoglu, “Image denoising using bivariate alpha- stable distributions in the complex wavelet domain,” Signal Processing Letters, IEEE, no. 1, pp. 17–20, Jan. 2005. <pdf>[</pdf><a href="https://docs.google.com/file/d/0BwyVwY3J9QYLcldoUVlSSGItOVU/edit?usp=sharing" target="_blank">Despeckling Code</a><pdf>]</pdf></p>
+
+                    
+                <h4>Texture analysis on Ocular imaging for Glaucoma disease regression</h4>
+                    <p>The project analysed texture in the OCT image layers on retinal disease glaucoma. An automated texture  
+                    classification method for glaucoma detection has been developed. Methodology for classification and feature extraction based on robust principle component analysis of texture descriptors was established. Also, the technique using multi-modal information fusion which incorporates data from visual field measurements with OCT and retinal fundus photography was developed.</p>
+                    <p><a href="..\papers\ISBIpaper.pdf">SVM-based texture classification in optical coherence tomography</a>. N. Anantrasirichai, Alin Achim, J. E. Morgan, I. Erchova, and L. Nicholson. In Proceedings of the IEEE International Symposium on Biomedical Imaging (ISIB 2013). <pdf>[</pdf><a href="..\papers\ISBIpaper.pdf">PDF</a><pdf>]</pdf> <pdf>[</pdf><a href="">BibTeX</a><pdf>]</pdf></p>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Office: room 2.34 Merchant Venturer's Building, Bristol, UK, BS8 1UB | Tel: +44 (0) 117-331-5075</p>
+        </div>
+    </body>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-41219445-1', 'bris.ac.uk');
+        ga('send', 'pageview');
+    </script>
+</html>

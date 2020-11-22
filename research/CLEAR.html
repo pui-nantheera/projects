@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="..\stylesheet.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+        <title>CLEAR</title>
+        <meta name="description" content="removing atmospheric distortion and heat haze using wavelet fusion">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="header">
+            <p id="name">Nantheera Anantrasirichai</p>
+        </div>
+        <div class="left">
+            <nav class="textmenu">
+                <ul>
+                  <li><a href="..\index.html">Home</a></li>
+                  <li><a href="..\about.html">About Pui</a></li>
+                  <li><a href="..\research.html">Research</a></li>
+                  <li><a href="..\publications.html">Publications</a></li>
+                  <li><a href="..\download.html">Download</a></li>
+                  <li><a href="..\links.html">Links</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="body">
+            <h2>Mitigating atmospheric distortion</h2>
+                <div class="researchlist">
+                    <p>Various types of atmospheric distortion can influence the visual quality of video signals during acquisition. Typical distortions include fog or haze which reduce contrast, and atmospheric turbulence due to temperature variations or aerosols. An effect of temperature variation is observed as a change in the interference pattern of the light refraction, causing  unclear, unsharp, waving images of the objects. This obviously makes the acquired imagery difficult to interpret.</p>
+                    <p>This project introduced a novel method for mitigating the effects of atmospheric distortion on observed images, particularly airborne turbulence which can severely degrade a region of interest (ROI).
+                    In order to provide accurate detail from objects behind the distorting layer, a simple and efficient frame selection method is proposed to pick informative ROIs from only good-quality frames. We solve the space-variant distortion problem using region-based fusion based on the Dual Tree Complex Wavelet Transform (DT-CWT). We also propose an object alignment method for pre-processing the ROI since this can exhibit significant offsets and distortions between frames. Simple haze removal is used as the final step. We refer to this algorithm as <a href="" target="_blank">CLEAR (for code please contact me)</a> (Complex waveLEt fusion for Atmospheric tuRbulence).</p>
+
+                    <h4>Atmospheric distorted videos of static scene</h4>
+                        <a name="seqeunces"></a>
+                        <p>Mirage (256x256 pixels, 50 frames). Left: distorted sequence. Right: restored image. <a href="https://docs.google.com/file/d/0BwyVwY3J9QYLc1ZoNHhrbEVHSXM/edit?usp=sharing" target="_blank">Download PNG</a></p>
+                        <iframe width="420" height="280" src="http://www.youtube.com/embed/rTuCWir_7RU?rel=0" frameborder="0" allowfullscreen></iframe> <img src="CLEAR/restoredMirage.png" alt="Restored Mirage" height="280">
+                        <div class="horizonalgap"></div>
+                        <p>Monument (512x512 pixels, 100 frames). Left: distorted sequence. Right: restored image. <a href="https://docs.google.com/file/d/0BwyVwY3J9QYLZzRfbmNSa2c4ZVU/edit?usp=sharing" target="_blank">Download PNG</a></p>
+                        <iframe width="420" height="280" src="http://www.youtube.com/embed/GosnJs8NCB0?rel=0" frameborder="0" allowfullscreen></iframe> <img src="CLEAR/restoredMonument.png" alt="Restored Monument" height="280">
+                        <p></p>
+                        <p>Simulated datasets, generated with gas burner turbulence, with three different amounts of distortions. <a href="https://drive.google.com/folderview?id=0BwyVwY3J9QYLN0dJbHlPdi1YX28&usp=sharing" target="_blank">Download PNG</a></p>
+                        <iframe width="420" height="280" src="http://www.youtube.com/embed/jM7dzmWnm2E?rel=0" frameborder="0" allowfullscreen></iframe> <img src="CLEAR/barcode.png" alt="Simulated data" height="280"> <img src="CLEAR/simulateData.png" alt="Simulated data" height="280">
+
+                    <h4>Atmospheric distorted videos of moving object</h4>
+                        <p>Left: Distorted video. Right: Restored video. <a href="https://drive.google.com/file/d/0BwyVwY3J9QYLZ3BzekVJLUFqVkE/edit?usp=sharing" target="_blank">Download PNG</a></p>
+                        <iframe width="853" height="280" src="http://www.youtube.com/embed/G-sIRUOgIQc?rel=0" frameborder="0" allowfullscreen></iframe>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li><span class="papername">Atmospheric turbulence mitigation using complex wavelet-based fusion</span>. N. Anantrasirichai, Alin Achim, Nick Kingsbury, and David Bull. IEEE Transactions on Image Processing.  <pdf>[</pdf><a href="..\papers\CLEARpaper.pdf">PDF</a><pdf>]</pdf> <pdf>[</pdf><a href="..\publications\2013tipBib.html">BibTeX</a><pdf>]</pdf> <pdf>[</pdf><a href="#seqeunces">Sequences</a><pdf>]</pdf> <pdf>[</pdf><a href="" target="_blank">Code: please contact me</a><pdf>]</pdf></li>
+                        <li><span class="papername">Mitigating the effects of atmospheric distortion using DT-CWT fusion</span>. N. Anantrasirichai, Alin Achim, David Bull, and Nick Kingsbury. In Proceedings of the IEEE International Conference on Image Processing (ICIP 2012). <pdf>[</pdf><a href="..\papers\CLEARicip.pdf">PDF</a><pdf>]</pdf> <pdf>[</pdf><a href="..\publications\2012icipBib.html">BibTeX</a><pdf>]</pdf></li>
+                        <li><span class="papername">Mitigating the effects of atmospheric distortion on video imagery : A review</span>. University of Bristol, 2011. <pdf>[</pdf><a href="papers\heathaze_review.pdf">PDF</a><pdf>]</pdf></li>
+                        <li><span class="papername">Mitigating the effects of atmospheric distortion</span>. University of Bristol, 2012. <pdf>[</pdf><a href="..\papers\heathaze_report.pdf">PDF</a><pdf>]</pdf></li>
+                    </ul>
+                </div>
+        </div>
+        <div id="footer">
+            <p>Office: room 2.34 Merchant Venturer's Building, Bristol, UK, BS8 1UB | Tel: +44 (0) 117-331-5075</p>
+        </div>
+    </body>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-41219445-1', 'bris.ac.uk');
+        ga('send', 'pageview');
+    </script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="..\stylesheet.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+        <title>Terrain</title>
+        <meta name="description" content="Projective image restoration">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="header">
+            <p id="name">Nantheera Anantrasirichai</p>
+        </div>
+        <div class="left">
+            <nav class="textmenu">
+                <ul>
+                  <li><a href="..\index.html">Home</a></li>
+                  <li><a href="..\about.html">About Pui</a></li>
+                  <li><a href="..\research.html">Research</a></li>
+                  <li><a href="..\publications.html">Publications</a></li>
+                  <li><a href="..\download.html">Download</a></li>
+                  <li><a href="..\links.html">Links</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="body">
+            <h2>Terrain analysis for robotics</h2>
+                <div class="researchlist">
+                    <p>Numerous scenarios exist where it is necessary or advantageous to classify surface material at a distance from a moving forward-facing camera. Examples include the use of image based sensors for assessing and predicting terrain type in association with the control or navigation of autonomous vehicles. In many real scenarios, the upcoming terrain might not just be flat but may also be oblique and vehicles may need to change speed and gear to ensure safe and clean motion.</p>
+
+                    <h4>Blur-robust texture features</h4>
+
+                    <p>Videos captured with moving cameras, particularly those attached to biped robots, often exhibit blur due to incorrect focus or slow shutter speed. Blurring effects generally alter the spatial and frequency characteristics of the content and this may reduce the performance of a classifier. Robust texture features are therefore developed to deal with this problem. <pdf>[</pdf><a href="https://github.com/pui-nantheera/blur-invariant-features" target="_blank">Matlab Code</a><pdf>]</pdf></p>
+
+
+
+                    <h4>Terrain classification from body-mounted cameras during human locomotion</h4>
+
+                    <p>A novel algorithm for terrain type classification based on monocular video captured from the viewpoint of human locomotion is introduced. A texture-based algorithm is developed to classify the path ahead into multiple groups that can be used to support terrain classification. Gait is taken into account in two ways.  Firstly, for key frame selection, when regions with homogeneous texture characteristics are updated, the frequency variations of the textured surface are analysed and used to adaptively define filter coefficients. Secondly, it is incorporated in the parameter estimation process where probabilities of path consistency are employed to improve terrain-type estimation <pdf>[</pdf><a href="https://github.com/pui-nantheera/terrain-classification/tree/github-master" target="_blank">Matlab Code</a><pdf>]</pdf>. Figures below show the proposed process of terrain classification for tracked regions and a result.</p>
+                    <p><img class="figuremiddle" src="terrainTexture/process.png" alt="Proposed process" height="320"></p>
+
+                        <p> Label 1 (green), Label 2 (red) and Label 3 (blue) correspond to the areas classified as hard surfaces, soft surfaces and unwalkable areas, respectively. The size of the circle indicates probabilities - bigger implies higher confidence of classification.</p>
+                        <iframe width="853" height="300" src="http://www.youtube.com/embed/3nz1uMb47HI" frameborder="0" allowfullscreen></iframe>
+
+                    <h4>Planar orientation estimation by texture</h4>
+
+                    <p>The gradient of a road or terrain influences the appropriate speed and power of a vehicle traversing it. Therefore, gradient prediction is necessary if autonomous vehicles are to optimise their locomotion. A novel texture-based method for estimating the orientation of planar surfaces under the basic assumption of homogeneity has been developed for scenarios that only a single image source exists, which also includes where a region of interest is too further to employ a depth estimation technique.</p>
+
+
+
+                    <h4>References</h4>
+                    <ul>
+                        <li><span class="papername">Terrain classification from body-mounted cameras during human locomotion</span>. N. Anantrasirichai, J. Burn and David Bull. IEEE Transactions on Cybernetics. <pdf>[</pdf><a href="..\papers\TerrainClassification.pdf">PDF</a><pdf>]</pdf> <pdf>[</pdf><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6960831" target="_blank">BibTeX</a><pdf>]</pdf> <pdf>[</pdf><a href="https://github.com/pui-nantheera/terrain-classification/tree/github-master" target="_blank">Matlab Code</a><pdf>]</pdf></li>
+                        <li><span class="papername">Projective image restoration using sparsity regularization</span>. N. Anantrasirichai, J. Burn and David Bull. In Proceedings of the IEEE International Conference on Image Processing (ICIP 2013). <pdf>[</pdf><a href="..\papers\projectiveICIP.pdf">PDF</a><pdf>]</pdf> <pdf>[</pdf><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=06738223" target="_blank">BibTeX</a><pdf>]</pdf> <pdf>[</pdf><a href="https://drive.google.com/file/d/0BwyVwY3J9QYLeEo3Y2cxbUdwS2c/edit?usp=sharing" target="_blank">Matlab Code</a><pdf>]</pdf></li>
+                        <li><span class="papername">Robust texture features for blurred images using undecimated dual-tree complex wavelets</span>. N. Anantrasirichai, J. Burn and David Bull. In Proceedings of the IEEE International Conference on Image Processing (ICIP 2014). <pdf>[</pdf><a href="..\papers\robustfeaturesICIP2014.pdf">PDF</a><pdf>]</pdf> <pdf>[</pdf><a href="https://github.com/pui-nantheera/blur-invariant-features" target="_blank">Matlab Code</a><pdf>]</pdf></li>
+                        <li><span class="papername">Orientation estimation for planar textured surfaces based on complex wavelets</span>. N. Anantrasirichai, J. Burn and David Bull. In Proceedings of the IEEE International Conference on Image Processing (ICIP 2014). <pdf>[</pdf><a href="..\papers\orientationICIP20014.pdf">PDF</a><pdf>]</pdf></li>
+                        <li><span class="papername">Robust texture features based on undecimated dual-tree complex wavelets and local magnitude binary patterns</span>. N. Anantrasirichai, J. Burn and David Bull. In Proceedings of the IEEE International Conference on Image Processing (ICIP 2015). <pdf>[</pdf><a href="papers\robustfeaturesICIP2015.pdf">PDF</a><pdf>]</pdf></li>
+
+                    </ul>
+                </div>
+        </div>
+        <div id="footer">
+            <p>Office: room 2.34 Merchant Venturer's Building, Bristol, UK, BS8 1UB | Tel: +44 (0) 117-331-5075</p>
+        </div>
+    </body>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-41219445-1', 'bris.ac.uk');
+        ga('send', 'pageview');
+    </script>
+</html>
